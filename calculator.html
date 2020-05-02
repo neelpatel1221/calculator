@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<style type="text/css">
+	body{
+		background-color: #49CFAE;
+	
+	}
+	 .text{
+		width: 230px;
+		font-size: 2rem;
+	}
+
+	.div{
+		width: 300px;
+		height: auto;
+					position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translateX(-50%) translateY(-50%);
+			text-align: center;
+			
+
+	}
+	.mybtn{
+		width: 110px;
+
+	}
+.mb-1{
+
+	padding: 15px 25px;
+	width: 50px;
+}
+	</style>
+
+
+</head>
+<body>
+	
+	<h1 class="text-center text-white-50 display-4">Calculator using JavaScript</h1>
+	<div class="div">	
+	<form name="frm">
+	<input type="text" name="result" class="text mb-2" size="50"><br>	
+	<input type="button" name="7" onclick="run7()" class="btn btn-lg btn-dark mb-1" value="7">		
+	<input type="button" name="8" onclick="run8()" class="btn btn-lg btn-dark mb-1" value="8">	
+	<input type="button" name="9" onclick="run9()" class="btn btn-lg btn-dark mb-1" value="9">
+	<input type="button" name="add" onclick="runadd()" class="btn btn-lg btn-dark mb-1" value="+"><br>
+	<input type="button" name="4" onclick="run4()" class="btn btn-lg btn-dark mb-1" value="4">	
+	<input type="button" name="5" onclick="run5()" class="btn btn-lg btn-dark mb-1" value="5">	
+	<input type="button" name="6" onclick="run6()" class="btn btn-lg btn-dark mb-1" value="6">
+	<input type="button" name="sub" onclick="runsub()" class="btn btn-lg btn-dark mb-1" value="-"><br>	
+	<input type="button" name="1" onclick="run1()" class="btn btn-lg btn-dark mb-1" value="1">	
+	<input type="button" name="2" onclick="run2()" class="btn btn-lg btn-dark mb-1" value="2">
+	<input type="button" name="3" onclick="run3()" class="btn btn-lg btn-dark mb-1" value="3">		
+	<input type="button" name="mul" onclick="runmul()" class="btn btn-lg btn-dark mb-1" value="*"><br>	
+	<input type="button" name="0" onclick="run0()" class="btn btn-lg btn-dark mb-1" value="0">
+	<input type="button" name="point" onclick="runpoint()" class="btn btn-lg btn-dark mb-1" value=".">
+	<input type="button" name="percent" onclick="runpercent()" class="btn btn-lg btn-dark mb-1" value="%">
+	<input type="button" name="dvd" onclick="rundvd()" class="btn btn-lg btn-dark mb-1" value="/"><br>	
+	<input type="button" name="clear" onclick="runclear()" class="button btn btn-danger mybtn" value="C">	
+	<input type="button" name="equal" onclick="runequal()" class=" button btn btn-success mybtn" value="=">
+
+	</form>
+	</div>
+<script src="calc.js"></script>
+</body>
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</html>
